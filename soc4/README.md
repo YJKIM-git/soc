@@ -4,7 +4,7 @@
 
 **Student ID:** 2023066980  
 **Name:** 김영진  
-
+* **Vivado Project:** `./vivado_dir/rw_sync_fsm/rw_sync_fsm.xpr`
 ---
 
 ## 1. Directory Structure
@@ -24,7 +24,7 @@
 │   ├── rw_sync_fsm.sv         # Top RTL design (FSM)
 │   └── tb_rw_sync_fsm.sv      # Testbench
 └── vivado_dir/                # Vivado project directory
-    ├── create_prj.tcl         # Project creation script
+    ├── create_prj.tcl         # ****Project creation script****
     └── rw_sync_fsm/
         ├── rw_sync_fsm.xpr    # Vivado project file
         └── ...

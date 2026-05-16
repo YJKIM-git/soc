@@ -1,0 +1,1 @@
+-debug "typical" "tb_rw_sync_fsm" -s "tb_rw_sync_fsm_snapshot" 

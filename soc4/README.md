@@ -95,6 +95,3 @@ vivado -mode gui ./vivado_dir/rw_sync_fsm/rw_sync_fsm.xpr -nolog -nojournal
 * **Status:** **ALL TESTS PASSED**
 * Verification details and assertion logs can be checked in `./result/sim_run.log`.
 ![waveform](./result/waveform.png)
-```
-
-```

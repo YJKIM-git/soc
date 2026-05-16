@@ -53,7 +53,7 @@ module tb_rw_sync_fsm;
     /**************************************/
     /*              READ_SEQ              */
     /**************************************/
-    do_write <= 1'b0;       // init: IDLE
+    do_write <= 1'b0;  // init: IDLE
     repeat (2) @(posedge clk);
     // IDLE -> READ -> DONE
     /**************************************/
@@ -61,7 +61,7 @@ module tb_rw_sync_fsm;
     /**************************************/
     /*             WRITE_SEQ              */
     /**************************************/
-    do_write <= 1'b1;       // init: DONE
+    do_write <= 1'b1;  // init: DONE
     repeat (3) @(posedge clk);
     // DONE -> IDLE -> WRITE -> DONE
     /**************************************/
@@ -69,8 +69,8 @@ module tb_rw_sync_fsm;
     /**************************************/
     /*          BURST_READ_SEQ            */
     /**************************************/
-    do_write <= 1'b0;       // init: DONE
-    @(posedge clk);         // IDLE -> READ
+    do_write <= 1'b0;  // init: DONE
+    @(posedge clk);  // IDLE -> READ
     do_write <= 1'b1;
     repeat (4) @(posedge clk);
     do_write <= 1'b0;
@@ -82,8 +82,8 @@ module tb_rw_sync_fsm;
     /**************************************/
     /*         BURST_WRITE_SEQ            */
     /**************************************/
-    do_write <= 1'b1;       // init: DONE
-    @(posedge clk);         // IDLE -> WRITE
+    do_write <= 1'b1;  // init: DONE
+    @(posedge clk);  // IDLE -> WRITE
     do_write <= 1'b0;
     repeat (4) @(posedge clk);
     do_write <= 1'b1;

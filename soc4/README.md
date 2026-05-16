@@ -24,9 +24,9 @@
 │   ├── rw_sync_fsm.sv         # Top RTL design (FSM)
 │   └── tb_rw_sync_fsm.sv      # Testbench
 └── vivado_dir/                # Vivado project directory
-    ├── create_prj.tcl         # ****Project creation script****
+    ├── create_prj.tcl         # **Project creation script**
     └── rw_sync_fsm/
-        ├── rw_sync_fsm.xpr    # Vivado project file
+        ├── rw_sync_fsm.xpr    # ****Vivado project file****
         └── ...
 
 ```

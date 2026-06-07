@@ -1,0 +1,11 @@
+design/dff_reg.v
+design/mux2to1.v
+design/sbox.v
+design/subbytes.v
+design/shiftrow.v
+design/mixcolumn.v
+design/add_xor.v
+design/key_gen.v
+design/aes_dp.v
+design/aes_ctrl.v
+design/aes_core.v

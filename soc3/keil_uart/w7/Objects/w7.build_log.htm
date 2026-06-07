@@ -1,0 +1,59 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: •ÏVision V5.43.1.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: KIM user, hanyang, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.43.0.0
+Toolchain Path:  C:\Users\user\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.24
+Assembler:       Armasm.exe V6.24
+Linker/Locator:  ArmLink.exe V6.24
+Library Manager: ArmAr.exe V6.24
+Hex Converter:   FromElf.exe V6.24
+CPU DLL:         SARMCM3.DLL V5.43.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      UL2CM3.DLL V1.164.16.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\Users\user\Downloads\soc2026_1\git_repo\soc\soc3\keil\w7\w7.uvprojx
+Project File Date:  04/20/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.24', folder: 'C:\Users\user\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target_1'
+compiling test_lab2.c...
+compiling test.c...
+assembling startup_cm0.S...
+assembling startup_cm0_w7.S...
+linking...
+.\Objects\w7.axf: Warning: L6439W: Multiply defined Global Symbol Default_Handler defined in .text(startup_cm0.o) rejected in favor of Symbol defined in .text(startup_cm0_w7.o).
+.\Objects\w7.axf: Warning: L6439W: Multiply defined Global Symbol NMI_Handler defined in .text(startup_cm0.o) rejected in favor of Symbol defined in .text(startup_cm0_w7.o).
+.\Objects\w7.axf: Warning: L6439W: Multiply defined Global Symbol HardFault_Handler defined in .text(startup_cm0.o) rejected in favor of Symbol defined in .text(startup_cm0_w7.o).
+..\scatter.sct(13): error: L6235E: More than one section matches selector - cannot all be FIRST/LAST.
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 3 warning and 1 error messages.
+".\Objects\w7.axf" - 1 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.Cortex_DFP.1.1.0.pack
+                ARM::Cortex_DFP@1.1.0
+                ARM Cortex Reference Subsystems Device Family Pack
+
+<h2>Collection of Component include folders:</h2>
+  C:/Users/user/AppData/Local/Arm/Packs/ARM/Cortex_DFP/1.1.0/Device/ARMCM0/Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

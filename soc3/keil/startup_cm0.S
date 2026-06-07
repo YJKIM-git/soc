@@ -33,6 +33,10 @@ __Vectors:
     .word   Default_Handler     /* 0x40-0x7C: IRQ0-15                   */
     .endr
 __Vectors_End:
+    /*0x80-0x83: Reset_Handler_1*/
+    /*0x84-0x85: Reset_Handler_2*/
+    /*0x86-0x8X: NMI_Handler    */
+    /*      ...                 */
 
     .equ __Vectors_Size, __Vectors_End - __Vectors
 

@@ -1,0 +1,143 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Apr 20 14:45:11 2026
+| Host         : DESKTOP-PPSMVGO running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_fpga_control_sets_placed.rpt
+| Design       : top_fpga
+| Device       : xc7z020
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    65 |
+|    Minimum number of control sets                        |    65 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   195 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    65 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     8 |
+| >= 6 to < 8        |    19 |
+| >= 8 to < 10       |    12 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    22 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              99 |           55 |
+| No           | No                    | Yes                    |             195 |          130 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             448 |          240 |
+| Yes          | No                    | Yes                    |             223 |           73 |
+| Yes          | Yes                   | No                     |              96 |           40 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------+-----------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+|  Clock Signal |                 Enable Signal                 |           Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------+-----------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+|  clk_50m_BUFG | u_soc/u_uart/u_apb_uart/p_0_in4_in            | u_soc/u_cm0/sys_sync_reg[1]          |                1 |              1 |         1.00 |
+|  clk_50m_BUFG |                                               | u_soc/u_rst_sync/sys_sync[0]_i_1_n_0 |                1 |              2 |         2.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Vpgbx6_i_1_n_0            | u_soc/u_cm0/sys_sync_reg[1]          |                2 |              4 |         2.00 |
+|  clk_50m_BUFG | u_soc/u_uart/u_apb_uart/rx_state_update       | u_soc/u_cm0/sys_sync_reg[1]          |                2 |              4 |         2.00 |
+|  clk_50m_BUFG | u_soc/u_uart/u_apb_uart/update_rx_tick_cnt    | u_soc/u_cm0/sys_sync_reg[1]          |                1 |              4 |         4.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Iixpw6_i_1_n_0            |                                      |                1 |              4 |         4.00 |
+|  clk_50m_BUFG | u_soc/u_uart/u_apb_uart/reg_baud_cntr_f0      | u_soc/u_cm0/sys_sync_reg[1]          |                1 |              4 |         4.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Sqkax6_i_1_n_0            |                                      |                3 |              4 |         1.33 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Wxjpw6_i_1_n_0            |                                      |                2 |              4 |         2.00 |
+|  clk_50m_BUFG | u_soc/u_uart/u_apb_uart/tx_state_update       | u_soc/u_cm0/sys_sync_reg[1]          |                2 |              4 |         2.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Numiu6                    | u_soc/u_cm0/u_logic/C5wpw6_i_1_n_0   |                2 |              6 |         3.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Qsmiu6                    | u_soc/u_cm0/u_logic/Cdwpw6_i_1_n_0   |                3 |              6 |         2.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Gumiu6                    | u_soc/u_cm0/u_logic/C7wpw6_i_1_n_0   |                1 |              6 |         6.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/S5nax6_i_1_n_0            | u_soc/u_cm0/u_logic/Nznax6_i_1_n_0   |                2 |              6 |         3.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Etmiu6                    | u_soc/u_cm0/u_logic/Cbwpw6_i_1_n_0   |                1 |              6 |         6.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Stmiu6                    | u_soc/u_cm0/u_logic/O4sax6_i_1_n_0   |                3 |              6 |         2.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/A5qax6_i_1_n_0            | u_soc/u_cm0/u_logic/U0rax6_i_1_n_0   |                3 |              6 |         2.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Cmlax6_i_1_n_0            | u_soc/u_cm0/u_logic/Whmax6_i_1_n_0   |                4 |              6 |         1.50 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Ltmiu6                    | u_soc/u_cm0/u_logic/C9wpw6_i_1_n_0   |                3 |              6 |         2.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Xsmiu6                    | u_soc/u_cm0/u_logic/V5vax6_i_1_n_0   |                1 |              6 |         6.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Kloax6_i_1_n_0            | u_soc/u_cm0/u_logic/Ehpax6_i_1_n_0   |                3 |              6 |         2.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Ydkiu6                    | u_soc/u_cm0/u_logic/Cfwpw6_i_1_n_0   |                5 |              6 |         1.20 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Csmiu6                    | u_soc/u_cm0/u_logic/Eotax6_i_1_n_0   |                2 |              6 |         3.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Zgzpw6_i_1_n_0            | u_soc/u_cm0/u_logic/Tg0qw6_i_1_n_0   |                2 |              6 |         3.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Jsmiu6                    | u_soc/u_cm0/u_logic/Lpwax6_i_1_n_0   |                3 |              6 |         2.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Ztmiu6                    | u_soc/u_cm0/u_logic/De6bx6_i_1_n_0   |                2 |              6 |         3.00 |
+|  clk_50m_BUFG | u_soc/u_uart/u_apb_uart/write_enable08        | u_soc/u_cm0/sys_sync_reg[1]          |                2 |              7 |         3.50 |
+|  clk_50m_BUFG | u_soc/u_uart/u_apb_uart/reg_baud_tick_reg_n_0 | u_soc/u_cm0/sys_sync_reg[1]          |                2 |              7 |         3.50 |
+|  clk_50m_BUFG | u_soc/u_uart/u_apb_uart/p_0_in18_out          | u_soc/u_cm0/sys_sync_reg[1]          |                1 |              7 |         7.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Sh4bx6_i_1_n_0            | u_soc/u_cm0/sys_sync_reg[1]          |                2 |              8 |         4.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Tgzax6_i_1_n_0            | u_soc/u_cm0/sys_sync_reg[1]          |                3 |              8 |         2.67 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Wpyax6_i_1_n_0            | u_soc/u_cm0/sys_sync_reg[1]          |                4 |              8 |         2.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Rezax6_i_1_n_0            | u_soc/u_cm0/sys_sync_reg[1]          |                2 |              8 |         4.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Cy4bx6_i_1_n_0            | u_soc/u_cm0/sys_sync_reg[1]          |                2 |              8 |         4.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Eyyax6_i_1_n_0            | u_soc/u_cm0/sys_sync_reg[1]          |                2 |              8 |         4.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/G54bx6_i_1_n_0            | u_soc/u_cm0/sys_sync_reg[1]          |                2 |              8 |         4.00 |
+|  clk_50m_BUFG | u_soc/u_uart/u_apb_uart/read_enable           | u_soc/u_cm0/sys_sync_reg[1]          |                5 |              8 |         1.60 |
+|  clk_50m_BUFG | u_soc/u_uart/u_apb_uart/tx_shift_buf0         | u_soc/u_cm0/sys_sync_reg[1]          |                1 |              8 |         8.00 |
+|  clk_50m_BUFG | u_soc/u_uart/u_apb_uart/rxbuf_sample          | u_soc/u_cm0/sys_sync_reg[1]          |                2 |              8 |         4.00 |
+|  clk_50m_BUFG | u_soc/u_uart/u_apb_uart/write_enable00        | u_soc/u_cm0/sys_sync_reg[1]          |                1 |              8 |         8.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Oa5bx6_i_1_n_0            | u_soc/u_cm0/sys_sync_reg[1]          |                2 |              8 |         4.00 |
+|  clk_50m_BUFG | u_soc/u_uart/apb_addr                         | u_soc/u_cm0/sys_sync_reg[1]          |                2 |             11 |         5.50 |
+|  clk_50m_BUFG | u_soc/u_led/wr_en                             | u_soc/u_cm0/sys_sync_reg[1]          |                3 |             12 |         4.00 |
+|  clk_50m_BUFG | u_soc/u_uart/u_apb_uart/reg_baud_cntr_i0      | u_soc/u_cm0/sys_sync_reg[1]          |                9 |             16 |         1.78 |
+|  clk_50m_BUFG | u_soc/u_uart/u_apb_uart/write_enable10        | u_soc/u_cm0/sys_sync_reg[1]          |                7 |             20 |         2.86 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Ydkiu6                    |                                      |               15 |             24 |         1.60 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Wnxax6_i_1_n_0            |                                      |               11 |             24 |         2.18 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Zgzpw6_i_1_n_0            |                                      |               14 |             24 |         1.71 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Cmlax6_i_1_n_0            |                                      |               16 |             26 |         1.62 |
+|  clk_50m_BUFG | u_soc/u_interconnect/u_mux/E[0]               | u_soc/u_cm0/sys_sync_reg[1]          |               10 |             26 |         2.60 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Jsmiu6                    |                                      |               10 |             26 |         2.60 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Ztmiu6                    |                                      |                9 |             26 |         2.89 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Kloax6_i_1_n_0            |                                      |               13 |             26 |         2.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Ltmiu6                    |                                      |               18 |             26 |         1.44 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Xsmiu6                    |                                      |               13 |             26 |         2.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Etmiu6                    |                                      |               18 |             26 |         1.44 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Stmiu6                    |                                      |               18 |             26 |         1.44 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/S5nax6_i_1_n_0            |                                      |               14 |             26 |         1.86 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/A5qax6_i_1_n_0            |                                      |               13 |             26 |         2.00 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Qsmiu6                    |                                      |               12 |             26 |         2.17 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Csmiu6                    |                                      |               18 |             26 |         1.44 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Numiu6                    |                                      |               11 |             26 |         2.36 |
+|  clk_50m_BUFG | u_soc/u_cm0/u_logic/Gumiu6                    |                                      |               11 |             26 |         2.36 |
+|  clk_50m_BUFG |                                               |                                      |               55 |             99 |         1.80 |
+|  clk_50m_BUFG |                                               | u_soc/u_cm0/sys_sync_reg[1]          |              129 |            193 |         1.50 |
++---------------+-----------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+
+

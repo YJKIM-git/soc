@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef" \
+"../../../../../../../../common/arm_ip/cm0_ds/CORTEXM0INTEGRATION.v" \
+"../../../../../../../rtl/ahb_dcd.v" \
+"../../../../../../../../common/ahb_bus/ahb_default_slv.v" \
+"../../../../../../../rtl/ahb_interconnect.v" \
+"../../../../../../../rtl/ahb_slv_mux.v" \
+"../../../../../../../../common/ahb_sram/ahb_sram.v" \
+"../../../../../../../../common/rst/cm0_rst_sync.v" \
+"../../../../../../../../common/arm_ip/cm0_ds/cortexm0ds_logic.v" \
+"../../../../../../../rtl/hy_soc.v" \
+"../../../../../top_fpga.v" \
+"../../../../../../../tb/tb_hy_soc.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

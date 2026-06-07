@@ -1,0 +1,17 @@
+0.7
+2020.2
+Nov 14 2025
+12:36:23
+/home/c0rnpotato/codespace/soc/soc3/common/ahb_bus/ahb_default_slv.v,1776577886,verilog,,/home/c0rnpotato/codespace/soc/soc3/lab2_m0_led/rtl/ahb_interconnect.v,,ahb_default_slv,,,../../../../../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc3/common/ahb_sram/ahb_sram.v,1776577886,verilog,,/home/c0rnpotato/codespace/soc/soc3/common/rst/cm0_rst_sync.v,,ahb_sram,,,../../../../../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc3/common/arm_ip/cm0_ds/CORTEXM0INTEGRATION.v,1776577886,verilog,,/home/c0rnpotato/codespace/soc/soc3/lab2_m0_led/rtl/ahb_dcd.v,,CORTEXM0INTEGRATION,,,../../../../../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc3/common/arm_ip/cm0_ds/cortexm0ds_logic.v,1776577886,verilog,,/home/c0rnpotato/codespace/soc/soc3/lab2_m0_led/rtl/hy_soc.v,,cortexm0ds_logic,,,../../../../../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc3/common/led/ahb_led.v,1776577886,verilog,,/home/c0rnpotato/codespace/soc/soc3/lab2_m0_led/rtl/ahb_slv_mux.v,,ahb_led,,,../../../../../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc3/common/rst/cm0_rst_sync.v,1776577886,verilog,,/home/c0rnpotato/codespace/soc/soc3/common/arm_ip/cm0_ds/cortexm0ds_logic.v,,cm0_rst_sync,,,../../../../../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc3/lab2_m0_led/fpga/zybo_z7/lab2_fpga/lab2_fpga.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,
+/home/c0rnpotato/codespace/soc/soc3/lab2_m0_led/fpga/zybo_z7/top_fpga.v,1776579737,verilog,,/home/c0rnpotato/codespace/soc/soc3/lab2_m0_led/tb/tb_hy_soc.v,,top_fpga,,,../../../../../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc3/lab2_m0_led/rtl/ahb_dcd.v,1776577887,verilog,,/home/c0rnpotato/codespace/soc/soc3/common/ahb_bus/ahb_default_slv.v,,ahb_dcd,,,../../../../../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc3/lab2_m0_led/rtl/ahb_interconnect.v,1776577887,verilog,,/home/c0rnpotato/codespace/soc/soc3/common/led/ahb_led.v,,ahb_interconnect,,,../../../../../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc3/lab2_m0_led/rtl/ahb_slv_mux.v,1776577887,verilog,,/home/c0rnpotato/codespace/soc/soc3/common/ahb_sram/ahb_sram.v,,ahb_slv_mux,,,../../../../../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc3/lab2_m0_led/rtl/hy_soc.v,1776577887,verilog,,/home/c0rnpotato/codespace/soc/soc3/lab2_m0_led/fpga/zybo_z7/top_fpga.v,,hy_soc,,,../../../../../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/c0rnpotato/codespace/soc/soc3/lab2_m0_led/tb/tb_hy_soc.v,1776577888,verilog,,,,tb_hy_soc,,,../../../../../../../../../../../../../tools/Xilinx/2025.2/data/rsb/busdef,,,,,
